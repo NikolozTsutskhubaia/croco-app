@@ -1,5 +1,11 @@
 # CrocoApp
 
+## Overview
+
+This task involves developing a user interface component for CrocoBet that displays tables of posts, users, and todo lists. The component should allow users to view and search data in a clean and organized manner.
+
+https://croco-app-five.vercel.app/
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.0.
 
 ## Development server
