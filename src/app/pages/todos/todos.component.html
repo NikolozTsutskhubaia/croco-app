@@ -1,0 +1,16 @@
+<h1>TODOs:</h1>
+<div *ngIf="todos.length; else noTodos" class="todo-grid">
+  <mat-card
+    *ngFor="let todo of todos"
+    class="post-card"
+    [ngClass]="{ 'completed-todo': todo.completed }"
+  >
+    <mat-card-header>
+      <mat-card-title>{{ todo.title }}</mat-card-title>
+    </mat-card-header>
+  </mat-card>
+</div>
+
+<ng-template #noTodos>
+  <p>No posts available for this user.</p>
+</ng-template>

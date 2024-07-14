@@ -1,0 +1,18 @@
+<nav>
+  <div>
+    <button (click)="onToggleMenu()" class="menu-toggle">
+      <img src="../../assets/menu-svg.svg" alt="" />
+    </button>
+    <button>
+      <img
+        [routerLink]="['/']"
+        src="../../assets/logo.svg"
+        alt="image"
+        class="croco-logo"
+      />
+    </button>
+  </div>
+  <div>
+    <span>{{ currentDateTime | date: 'd.MM.y, h:mm:ss a' }}</span>
+  </div>
+</nav>

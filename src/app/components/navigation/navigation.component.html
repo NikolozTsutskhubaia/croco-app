@@ -1,0 +1,16 @@
+<div class="side-menu" [class.open]="isOpen">
+  <button (click)="toggleMenu()" class="close-btn">
+    <img src="../../../assets/close-btn.svg" alt="" />
+  </button>
+  <nav>
+    <ul>
+      <li [routerLink]="['/']" (click)="toggleMenu()">
+        Users <img src="../../../assets/user.svg" alt="" />
+      </li>
+      <li [routerLink]="['/posts']" (click)="toggleMenu()">
+        Posts <img src="../../../assets/posts.svg" alt="" />
+      </li>
+    </ul>
+  </nav>
+</div>
+<div class="backdrop" *ngIf="isOpen" (click)="toggleMenu()"></div>
